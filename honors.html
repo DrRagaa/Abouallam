@@ -1,0 +1,591 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="ar" dir="rtl" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="metaTitle">الجوائز والتكريمات | أ.د. رجاء محمود أبو علام</title>
+
+
+  <!-- Bootstrap 5.3 CSS (RTL by default for Arabic) -->
+
+
+  <link id="bootstrapCss" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+
+
+  <!-- Bootstrap Icons -->
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!-- Web Fonts: Cairo (Arabic), Cinzel & Inter (Latin) -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <style>
+    :root {
+      --academic-navy: #0d1b2a;
+      --academic-gold: #c5a059;
+      --card-bg: #ffffff;
+    }
+
+
+    body {
+      font-family: 'Cairo', 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #2b2d42;
+    }
+
+
+    html[dir="ltr"] .brand-font {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.5px;
+    }
+
+
+    .page-header {
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+      color: #ffffff;
+      border-bottom: 3px solid var(--academic-gold);
+    }
+
+
+    .gold-accent {
+      color: var(--academic-gold);
+    }
+
+
+    .honor-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+
+    .honor-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+    }
+
+
+    .membership-list li {
+      padding: 0.65rem 0;
+      border-bottom: 1px solid #edf2f7;
+    }
+
+
+    .membership-list li:last-child {
+      border-bottom: none;
+    }
+
+
+    .lang-btn {
+      cursor: pointer;
+      font-size: 0.88rem;
+    }
+
+
+    .lang-btn.active {
+      background-color: var(--academic-gold) !important;
+      color: #000000 !important;
+      border-color: var(--academic-gold) !important;
+      font-weight: 700;
+    }
+  </style>
+
+
+</head>
+<body>
+
+
+  <!-- ============================================== -->
+
+
+  <!-- NAVIGATION BAR                                -->
+
+
+  <!-- ============================================== -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: var(--academic-navy);">
+    <div class="container">
+      <a class="navbar-brand brand-font fw-bold d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-mortarboard-fill gold-accent fs-4"></i>
+        <span id="navBrand">أ.د. رجاء محمود أبو علام</span>
+      </a>
+
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" id="navHome" href="index.html">الرئيسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="navCv" href="cv.html">السيرة الأكاديمية (CV)</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="navHonors" href="honors.html">الجوائز والتكريمات</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="navBooks" href="books.html">المؤلفات والكتب</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="navResearch" href="research.html">الأبحاث والدراسات</a>
+      </li>
+      
+    </ul>
+
+
+    <!-- Language Switcher Controls -->
+    <div class="btn-group" role="group" aria-label="Language Selector">
+      <button type="button" class="btn btn-outline-light btn-sm lang-btn active" onclick="switchLanguage('ar')">العربية</button>
+      <button type="button" class="btn btn-outline-light btn-sm lang-btn" onclick="switchLanguage('en')">English</button>
+      <button type="button" class="btn btn-outline-light btn-sm lang-btn" onclick="switchLanguage('tr')">Türkçe</button>
+    </div>
+  </div>
+</div>
+
+  </nav>
+
+
+  <!-- ============================================== -->
+
+
+  <!-- PAGE HEADER                                    -->
+
+
+  <!-- ============================================== -->
+
+
+  <header class="page-header py-5">
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <div class="col-lg-9">
+          <div class="d-inline-flex align-items-center gap-2 mb-2 text-warning fw-semibold small">
+            <i class="bi bi-award-fill"></i>
+            <span id="headerEyebrow">التقدير الدولي والمهني</span>
+          </div>
+          <h1 class="display-6 fw-bold brand-font mb-3" id="pageHeading">الجوائز والتكريمات</h1>
+          <p class="lead opacity-90 mb-0" id="introLead" style="font-size: 1.15rem; line-height: 1.9;">
+            حظي الأستاذ الدكتور رجاء محمود أبو علام بتقدير دولي واسع لإسهاماته الأكاديمية الرائدة في مجالات علم النفس التربوي، والقياس النفسي، ومناهج البحث العلمي في العالم العربي.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============================================== -->
+
+
+  <!-- MAIN CONTENT                                   -->
+
+
+  <!-- ============================================== -->
+
+
+  <main class="py-5">
+    <div class="container py-2">
+      <div class="row g-4">
+
+
+    <!-- Column 1: International Biographies -->
+    <div class="col-lg-6">
+      <div class="card h-100 border-0 shadow-sm p-4 honor-card bg-white">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="fs-2 gold-accent">
+            <i class="bi bi-globe-americas"></i>
+          </div>
+          <h2 class="h4 fw-bold mb-0 brand-font" id="bioSecTitle">الموسوعات البيوغرافية الدولية</h2>
+        </div>
+
+
+        <!-- Item 1 -->
+        <div class="border-start border-3 border-warning ps-3 pe-3 mb-4">
+          <span class="badge text-bg-warning mb-2" id="badgeWho">2003 &bull; الإصدار العشرون</span>
+          <h5 class="fw-bold mb-2" id="whoTitle">موسوعة Who’s Who in the World</h5>
+          <p class="text-muted small mb-0" id="whoDesc">
+            أُدرج في موسوعة "Who’s Who in the World" (الإصدار العشرون، 2003) الصادرة عن مؤسسة ماركيز الدولية (Marquis Who's Who)، وهي دليل بيوغرافي عالمي يوثق سير الشخصيات المتميزة ذات الإنجازات المهنية المؤثرة.
+          </p>
+        </div>
+
+
+        <!-- Item 2 -->
+        <div class="border-start border-3 border-warning ps-3 pe-3">
+          <span class="badge text-bg-warning mb-2" id="badgeBarons">2000 &bull; طبعة تذكارية</span>
+          <h5 class="fw-bold mb-2" id="baronsTitle">موسوعة The Barons 500: Leaders for the New Century</h5>
+          <p class="text-muted small mb-0" id="baronsDesc">
+            أُفردت له ترجمة بيوغرافية ضمن مرجع "The Barons 500: Leaders for the New Century" (الطبعة التذكارية لعام 2000)، وهو عمل مرجعي بارز يوثق الشخصيات الأكثر تأثيراً عبر مختلف المجالات المهنية والأكاديمية.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Column 2: International Professional Memberships -->
+    <div class="col-lg-6">
+      <div class="card h-100 border-0 shadow-sm p-4 honor-card bg-white">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="fs-2 text-primary">
+            <i class="bi bi-person-badge-fill"></i>
+          </div>
+          <h2 class="h4 fw-bold mb-0 brand-font" id="memSecTitle">العضويات المهنية الدولية</h2>
+        </div>
+        <p class="text-muted small mb-3" id="memIntro">
+          شغل الأستاذ الدكتور رجاء أبو علام عضوية عدد من الهيئات والمنظمات المهنية العالمية المرموقة، من بينها:
+        </p>
+        <ul class="list-unstyled membership-list mb-0">
+          <li class="d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-success mt-1"></i>
+            <span id="mem1"><strong>الجمعية الأمريكية لعلم النفس</strong> (American Psychological Association) &mdash; عضو منذ عام 1967</span>
+          </li>
+          <li class="d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-success mt-1"></i>
+            <span id="mem2"><strong>الجمعية الوطنية للأطفال الموهوبين</strong> (National Association for Gifted Children)</span>
+          </li>
+          <li class="d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-success mt-1"></i>
+            <span id="mem3"><strong>مجلس الأطفال غير العاديين / ذوي الاحتياجات الخاصة</strong> (Council for Exceptional Children)</span>
+          </li>
+          <li class="d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-success mt-1"></i>
+            <span id="mem4"><strong>المجلس العالمي للأطفال الموهوبين والمتفوقين</strong> (World Council for Gifted and Talented Children)</span>
+          </li>
+          <li class="d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill text-success mt-1"></i>
+            <span id="mem5"><strong>الاتحاد العالمي للصحة النفسية</strong> (World Federation for Mental Health)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Bottom Feature: Journal & Regional Impact -->
+    <div class="col-12">
+      <div class="card border-0 shadow-sm p-4 honor-card bg-white">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-2 text-center text-md-start">
+            <div class="display-5 text-warning">
+              <i class="bi bi-journal-bookmark-fill"></i>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <h3 class="h5 fw-bold mb-2 brand-font" id="journalTitle">مجلة الطفولة العربية والريادة الإقليمية</h3>
+            <p class="text-muted small mb-3" id="journalDesc" style="line-height: 1.8;">
+              كان الأستاذ الدكتور رجاء محمود أبو علام من الأعضاء المؤسسين لـ <strong>"مجلة الطفولة العربية"</strong>، وهي دورية أكاديمية محكمة تصدر عن الجمعية الكويتية لتقدم الطفولة العربية، وحظي لاحقاً بالتكريم تقديراً لدوره التأسيسي وإسهاماته المستمرة في مسيرتها العلمية.
+            </p>
+            <div class="p-3 rounded bg-light border-start border-4 border-primary">
+              <p class="mb-0 text-secondary small fw-medium" id="impactDesc" style="line-height: 1.8;">
+                ومن خلال مؤلفاته العلمية المرجعية، وقيادته الأكاديمية المؤسسية، وخدماته المهنية الاستشارية، قدم الأستاذ الدكتور رجاء أبو علام إسهامات محورية فارقة في ترسيخ وتطوير مجالات علم النفس التربوي والقياس النفسي في جمهورية مصر العربية، ودولة الكويت، ومختلف أرجاء الوطن العربي.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+  </main>
+
+
+  <!-- ============================================== -->
+
+
+  <!-- FOOTER                                         -->
+
+
+  <!-- ============================================== -->
+
+
+  <footer class="text-white py-5" style="background-color: var(--academic-navy); border-top: 2px solid var(--academic-gold);">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <h5 class="brand-font fw-bold mb-2" id="footerBrand">أ.د. رجاء محمود أبو علام</h5>
+          <p class="small text-white-50 mb-3" id="footerText">
+            أرشيف تذكاري وعلمي متاح للباحثين والطلاب للتعريف بالإنتاج الفكري والمؤلفات في علم النفس والتربية والإحصاء.
+          </p>
+          <div class="small text-white-50">
+            <i class="bi bi-geo-alt me-1"></i> <span id="footerAffiliation">كلية الدراسات العليا للتربية &mdash; جامعة القاهرة</span>
+          </div>
+        </div>
+
+
+    <div class="col-6 col-lg-3">
+      <h6 class="text-uppercase fw-bold gold-accent small mb-3" id="footerLinksTitle">أقسام الأرشيف</h6>
+      <ul class="list-unstyled small mb-0 d-grid gap-2">
+        <li><a href="cv.html" class="text-white-50 text-decoration-none" id="fLinkCv">السيرة الأكاديمية</a></li>
+        <li><a href="honors.html" class="text-white-50 text-decoration-none" id="fLinkHonors">الجوائز والتكريمات</a></li>
+        <li><a href="books.html" class="text-white-50 text-decoration-none" id="fLinkBooks">المؤلفات والكتب</a></li>
+        <li><a href="research.html" class="text-white-50 text-decoration-none" id="fLinkResearch">الأبحاث العلمية</a></li>
+        <li><a href="contact.html" class="text-white-50 text-decoration-none" id="fLinkContact">تواصل وإهداءات</a></li>
+      </ul>
+    </div>
+
+
+    <div class="col-6 col-lg-3">
+      <h6 class="text-uppercase fw-bold gold-accent small mb-3" id="footerInquiriesTitle">الاستفسارات الأكاديمية</h6>
+      <p class="small text-white-50 mb-2" id="footerInquiriesText">للاستفسارات العلمية، الاقتباسات، أو الإهداءات الجامعية:</p>
+      <a href="contact.html" class="btn btn-outline-light btn-sm" id="btnFooterContact">تواصل مع المشرفين</a>
+    </div>
+  </div>
+
+
+  <hr class="my-4 border-secondary opacity-25">
+  <div class="text-center small text-white-50">
+    &copy; <span id="currentYear"></span> <span id="footerCopyright">موقع وأرشيف أ.د. رجاء محمود أبو علام. محفوظ لغايات البحث العلمي والتعليم.</span>
+  </div>
+</div>
+
+  </footer>
+
+
+  <!-- ============================================== -->
+
+
+  <!-- JAVASCRIPT: BOOTSTRAP + TRANSLATION LOGIC      -->
+
+
+  <!-- ============================================== -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+
+    const honorsContent = {
+      ar: {
+        dir: "rtl",
+        bootstrap: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css",
+        font: "'Cairo', sans-serif",
+        metaTitle: "الجوائز والتكريمات | أ.د. رجاء محمود أبو علام",
+        navBrand: "أ.د. رجاء محمود أبو علام",
+        navHome: "الرئيسية",
+        navCv: "السيرة الأكاديمية (CV)",
+        navHonors: "الجوائز والتكريمات",
+        navBooks: "المؤلفات والكتب",
+        navResearch: "الأبحاث والدراسات",
+        navContact: "تواصل وإهداءات",
+        headerEyebrow: "التقدير الدولي والمهني",
+        pageHeading: "الجوائز والتكريمات",
+        introLead: "حظي الأستاذ الدكتور رجاء محمود أبو علام بتقدير دولي واسع لإسهاماته الأكاديمية الرائدة في مجالات علم النفس التربوي، والقياس النفسي، ومناهج البحث العلمي في العالم العربي.",
+        bioSecTitle: "الموسوعات البيوغرافية الدولية",
+        badgeWho: "2003 • الإصدار العشرون",
+        whoTitle: "موسوعة Who’s Who in the World",
+        whoDesc: "أُدرج في موسوعة \"Who’s Who in the World\" (الإصدار العشرون، 2003) الصادرة عن مؤسسة ماركيز الدولية (Marquis Who's Who)، وهي دليل بيوغرافي عالمي يوثق سير الشخصيات المتميزة ذات الإنجازات المهنية المؤثرة.",
+        badgeBarons: "2000 • طبعة تذكارية",
+        baronsTitle: "موسوعة The Barons 500: Leaders for the New Century",
+        baronsDesc: "أُفردت له ترجمة بيوغرافية ضمن مرجع \"The Barons 500: Leaders for the New Century\" (الطبعة التذكارية لعام 2000)، وهو عمل مرجعي بارز يوثق الشخصيات الأكثر تأثيراً عبر مختلف المجالات المهنية والأكاديمية.",
+        memSecTitle: "العضويات المهنية الدولية",
+        memIntro: "شغل الأستاذ الدكتور رجاء أبو علام عضوية عدد من الهيئات والمنظمات المهنية العالمية المرموقة، من بينها:",
+        mem1: "<strong>الجمعية الأمريكية لعلم النفس</strong> (American Psychological Association) &mdash; عضو منذ عام 1967",
+        mem2: "<strong>الجمعية الوطنية للأطفال الموهوبين</strong> (National Association for Gifted Children)",
+        mem3: "<strong>مجلس الأطفال غير العاديين / ذوي الاحتياجات الخاصة</strong> (Council for Exceptional Children)",
+        mem4: "<strong>المجلس العالمي للأطفال الموهوبين والمتفوقين</strong> (World Council for Gifted and Talented Children)",
+        mem5: "<strong>الاتحاد العالمي للصحة النفسية</strong> (World Federation for Mental Health)",
+        journalTitle: "مجلة الطفولة العربية والريادة الإقليمية",
+        journalDesc: "كان الأستاذ الدكتور رجاء محمود أبو علام من الأعضاء المؤسسين لـ <strong>\"مجلة الطفولة العربية\"</strong>، وهي دورية أكاديمية محكمة تصدر عن الجمعية الكويتية لتقدم الطفولة العربية، وحظي لاحقاً بالتكريم تقديراً لدوره التأسيسي وإسهاماته المستمرة في مسيرتها العلمية.",
+        impactDesc: "ومن خلال مؤلفاته العلمية المرجعية، وقيادته الأكاديمية المؤسسية، وخدماته المهنية الاستشارية، قدم الأستاذ الدكتور رجاء أبو علام إسهامات محورية فارقة في ترسيخ وتطوير مجالات علم النفس التربوي والقياس النفسي في جمهورية مصر العربية، ودولة الكويت، ومختلف أرجاء الوطن العربي.",
+        footerBrand: "أ.د. رجاء محمود أبو علام",
+        footerText: "أرشيف تذكاري وعلمي متاح للباحثين والطلاب للتعريف بالإنتاج الفكري والمؤلفات في علم النفس والتربية والإحصاء.",
+        footerAffiliation: "كلية الدراسات العليا للتربية — جامعة القاهرة",
+        footerLinksTitle: "أقسام الأرشيف",
+        fLinkCv: "السيرة الأكاديمية",
+        fLinkHonors: "الجوائز والتكريمات",
+        fLinkBooks: "المؤلفات والكتب",
+        fLinkResearch: "الأبحاث العلمية",
+        fLinkContact: "تواصل وإهداءات",
+        footerInquiriesTitle: "الاستفسارات الأكاديمية",
+        footerInquiriesText: "للاستفسارات العلمية، الاقتباسات، أو الإهداءات الجامعية:",
+        btnFooterContact: "تواصل مع المشرفين",
+        footerCopyright: "موقع وأرشيف أ.د. رجاء محمود أبو علام. محفوظ لغايات البحث العلمي والتعليم."
+      },
+      en: {
+        dir: "ltr",
+        bootstrap: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
+        font: "'Inter', sans-serif",
+        metaTitle: "Honors and Recognitions | Prof. Dr. Ragaa Abou Allam",
+        navBrand: "Prof. Dr. Ragaa Abou Allam",
+        navHome: "Home",
+        navCv: "Academic CV",
+        navHonors: "Honors & Recognitions",
+        navBooks: "Books & Treatises",
+        navResearch: "Research Papers",
+        navContact: "Contact & Archive",
+        headerEyebrow: "International & Professional Recognition",
+        pageHeading: "Honors and Recognitions",
+        introLead: "Professor Ragaa Mahmoud Abu Allam received international recognition for his academic contributions to Educational Psychology, psychometrics, and research methodology in the Arab world.",
+        bioSecTitle: "International Biographical Directories",
+        badgeWho: "2003 • 20th Edition",
+        whoTitle: "Who’s Who in the World",
+        whoDesc: "He was included in Who’s Who in the World (20th Edition, 2003), published by Marquis Who's Who, an international biographical directory that documents individuals recognized for significant professional achievements.",
+        badgeBarons: "2000 • Commemorative Edition",
+        baronsTitle: "The Barons 500: Leaders for the New Century",
+        baronsDesc: "His biography was also featured in The Barons 500: Leaders for the New Century (2000 Commemorative Edition), a reference work profiling influential figures across various professional fields.",
+        memSecTitle: "International Professional Memberships",
+        memIntro: "Professor Abu Allam held membership in several international professional organizations, including:",
+        mem1: "<strong>American Psychological Association</strong> (Member since 1967)",
+        mem2: "<strong>National Association for Gifted Children</strong>",
+        mem3: "<strong>Council for Exceptional Children</strong>",
+        mem4: "<strong>World Council for Gifted and Talented Children</strong>",
+        mem5: "<strong>World Federation for Mental Health</strong>",
+        journalTitle: "Arab Childhood Journal & Regional Leadership",
+        journalDesc: "He was also among the founding members of <strong>Majallat Al-Tufulah Al-Arabiyah (Arab Childhood Journal)</strong>, a peer-reviewed academic journal issued by the Kuwaiti Association for the Advancement of Arab Childhood, and was later honored among its founding contributors.",
+        impactDesc: "Through his academic publications, institutional leadership, and professional service, Professor Abu Allam contributed significantly to the development of educational psychology and psychological measurement in Egypt, Kuwait, and the wider Arab region.",
+        footerBrand: "Prof. Dr. Ragaa Mahmoud Abou Allam",
+        footerText: "An academic memorial and archive dedicated to students and researchers, preserving his intellectual legacy in psychology and education.",
+        footerAffiliation: "Faculty of Graduate Studies in Education — Cairo University",
+        footerLinksTitle: "Archive Navigation",
+        fLinkCv: "Curriculum Vitae",
+        fLinkHonors: "Honors & Recognitions",
+        fLinkBooks: "Published Books",
+        fLinkResearch: "Research Papers",
+        fLinkContact: "Contact & Permissions",
+        footerInquiriesTitle: "Academic Inquiries",
+        footerInquiriesText: "For citations, academic permissions, or archival correspondence:",
+        btnFooterContact: "Contact Archive",
+        footerCopyright: "Prof. Dr. Ragaa Abou Allam Memorial Archive. Maintained for educational and scientific reference."
+      },
+      tr: {
+        dir: "ltr",
+        bootstrap: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
+        font: "'Inter', sans-serif",
+        metaTitle: "Ödüller ve Onurlar | Prof. Dr. Ragaa Abou Allam",
+        navBrand: "Prof. Dr. Ragaa Abou Allam",
+        navHome: "Ana Sayfa",
+        navCv: "Özgeçmiş (CV)",
+        navHonors: "Ödüller ve Onurlar",
+        navBooks: "Kitaplar ve Eserler",
+        navResearch: "Araştırma ve Makaleler",
+        navContact: "İletişim & Arşiv",
+        headerEyebrow: "Uluslararası ve Mesleki Takdir",
+        pageHeading: "Ödüller ve Onurlar",
+        introLead: "Prof. Dr. Ragaa Mahmoud Abu Allam, Arap dünyasında Eğitim Psikolojisi, psikometri ve bilimsel araştırma yöntemlerine yaptığı akademik katkılarla uluslararası alanda saygın bir konuma sahip olmuştur.",
+        bioSecTitle: "Uluslararası Biyografik Kaynaklar",
+        badgeWho: "2003 • 20. Baskı",
+        whoTitle: "Who’s Who in the World",
+        whoDesc: "Marquis Who's Who tarafından yayımlanan ve seçkin profesyonel başarılara imza atan isimleri içeren Who’s Who in the World (20. Baskı, 2003) ansiklopedisinde yer almıştır.",
+        badgeBarons: "2000 • Anı Baskısı",
+        baronsTitle: "The Barons 500: Leaders for the New Century",
+        baronsDesc: "Biyografisi, çeşitli mesleki ve bilimsel alanlardaki en etkili liderleri profilleyen The Barons 500: Leaders for the New Century (2000 Hatıra Baskısı) adlı referans eserde yayımlanmıştır.",
+        memSecTitle: "Uluslararası Mesleki Üyelikler",
+        memIntro: "Prof. Dr. Abu Allam, birçok saygın uluslararası mesleki kuruluşun üyesiydi:",
+        mem1: "<strong>Amerikan Psikoloji Derneği</strong> (American Psychological Association) &mdash; 1967'den beri üye",
+        mem2: "<strong>Ulusal Üstün Yetenekli Çocuklar Derneği</strong> (National Association for Gifted Children)",
+        mem3: "<strong>Özel Gereksinimli Çocuklar Konseyi</strong> (Council for Exceptional Children)",
+        mem4: "<strong>Dünya Üstün Zekalı ve Yetenekli Çocuklar Konseyi</strong> (World Council for Gifted and Talented Children)",
+        mem5: "<strong>Dünya Ruh Sağlığı Federasyonu</strong> (World Federation for Mental Health)",
+        journalTitle: "Arap Çocukluğu Dergisi ve Bölgesel Liderlik",
+        journalDesc: "Kuveyt Arap Çocukluğunu Geliştirme Derneği tarafından yayımlanan hakemli akademik dergi <strong>Majallat Al-Tufulah Al-Arabiyah (Arap Çocukluğu Dergisi)</strong>'nin kurucu üyeleri arasında yer almış ve daha sonra kurucu katkılarından dolayı onurlandırılmıştır.",
+        impactDesc: "Akademik yayınları, kurumsal liderliği ve danışmanlık hizmetleri aracılığıyla Prof. Abu Allam, Mısır, Kuveyt ve tüm Arap bölgesinde eğitim psikolojisi ve psikolojik ölçme alanlarının gelişimine öncülük etmiştir.",
+        footerBrand: "Prof. Dr. Ragaa Mahmoud Abou Allam",
+        footerText: "Eğitim psikolojisi, istatistik ve araştırma yöntemleri alanındaki bilimsel mirasını yaşatmak için hazırlanmış anı ve araştırma arşivi.",
+        footerAffiliation: "Eğitim Bilimleri Enstitüsü — Kahire Üniversitesi",
+        footerLinksTitle: "Arşiv Bölümleri",
+        fLinkCv: "Akademik Özgeçmiş",
+        fLinkHonors: "Ödüller ve Onurlar",
+        fLinkBooks: "Yayımlanan Kitaplar",
+        fLinkResearch: "Bilimsel Makaleler",
+        fLinkContact: "İletişim & Arşiv",
+        footerInquiriesTitle: "Akademik İletişim",
+        footerInquiriesText: "Akademik atıflar, kaynak talepleri ve arşiv izinleri için:",
+        btnFooterContact: "İletişime Geçin",
+        footerCopyright: "Prof. Dr. Ragaa Abou Allam Akademik Arşivi. Eğitim ve araştırma amacıyla hazırlanmıştır."
+      }
+    };
+
+
+    function switchLanguage(lang) {
+      const data = honorsContent[lang];
+      if (!data) return;
+
+
+      const root = document.getElementById("htmlRoot");
+      root.setAttribute("lang", lang);
+      root.setAttribute("dir", data.dir);
+      document.body.style.fontFamily = data.font;
+
+
+      document.getElementById("bootstrapCss").setAttribute("href", data.bootstrap);
+
+
+      document.getElementById("metaTitle").textContent = data.metaTitle;
+      document.getElementById("navBrand").textContent = data.navBrand;
+      document.getElementById("navHome").textContent = data.navHome;
+      document.getElementById("navCv").textContent = data.navCv;
+      document.getElementById("navHonors").textContent = data.navHonors;
+      document.getElementById("navBooks").textContent = data.navBooks;
+      document.getElementById("navResearch").textContent = data.navResearch;
+      document.getElementById("navContact").textContent = data.navContact;
+
+
+      document.getElementById("headerEyebrow").textContent = data.headerEyebrow;
+      document.getElementById("pageHeading").textContent = data.pageHeading;
+      document.getElementById("introLead").textContent = data.introLead;
+
+
+      document.getElementById("bioSecTitle").textContent = data.bioSecTitle;
+      document.getElementById("badgeWho").textContent = data.badgeWho;
+      document.getElementById("whoTitle").textContent = data.whoTitle;
+      document.getElementById("whoDesc").textContent = data.whoDesc;
+
+
+      document.getElementById("badgeBarons").textContent = data.badgeBarons;
+      document.getElementById("baronsTitle").textContent = data.baronsTitle;
+      document.getElementById("baronsDesc").textContent = data.baronsDesc;
+
+
+      document.getElementById("memSecTitle").textContent = data.memSecTitle;
+      document.getElementById("memIntro").textContent = data.memIntro;
+      document.getElementById("mem1").innerHTML = data.mem1;
+      document.getElementById("mem2").innerHTML = data.mem2;
+      document.getElementById("mem3").innerHTML = data.mem3;
+      document.getElementById("mem4").innerHTML = data.mem4;
+      document.getElementById("mem5").innerHTML = data.mem5;
+
+
+      document.getElementById("journalTitle").textContent = data.journalTitle;
+      document.getElementById("journalDesc").innerHTML = data.journalDesc;
+      document.getElementById("impactDesc").innerHTML = data.impactDesc;
+
+
+      document.getElementById("footerBrand").textContent = data.footerBrand;
+      document.getElementById("footerText").textContent = data.footerText;
+      document.getElementById("footerAffiliation").textContent = data.footerAffiliation;
+      document.getElementById("footerLinksTitle").textContent = data.footerLinksTitle;
+      document.getElementById("fLinkCv").textContent = data.fLinkCv;
+      document.getElementById("fLinkHonors").textContent = data.fLinkHonors;
+      document.getElementById("fLinkBooks").textContent = data.fLinkBooks;
+      document.getElementById("fLinkResearch").textContent = data.fLinkResearch;
+      document.getElementById("fLinkContact").textContent = data.fLinkContact;
+      document.getElementById("footerInquiriesTitle").textContent = data.footerInquiriesTitle;
+      document.getElementById("footerInquiriesText").textContent = data.footerInquiriesText;
+      document.getElementById("btnFooterContact").textContent = data.btnFooterContact;
+      document.getElementById("footerCopyright").textContent = data.footerCopyright;
+
+
+      document.querySelectorAll(".lang-btn").forEach(btn => btn.classList.remove("active"));
+      event.target.classList.add("active");
+    }
+  </script>
+
+
+</body>
+</html>
