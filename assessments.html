@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المقاييس والاختبارات النفسية المقننة | أ.د. رجاء محمود أبو علام</title>
+  
+  <!-- Bootstrap 5 CSS (RTL) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --academic-navy: #0d1b2a;
+      --academic-gold: #c5a059;
+      --academic-slate: #415a77;
+      --academic-bg: #f8fafc;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--academic-bg);
+      color: #1e293b;
+    }
+
+    .brand-font {
+      font-weight: 800;
+    }
+
+    .navbar-academic {
+      background-color: var(--academic-navy);
+      border-bottom: 2px solid var(--academic-gold);
+    }
+
+    .nav-link {
+      font-weight: 600;
+      color: #e2e8f0 !important;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--academic-gold) !important;
+    }
+
+    .hero-header {
+      background: linear-gradient(135deg, var(--academic-navy) 0%, #1b263b 100%);
+      color: white;
+      padding: 3rem 0;
+      border-bottom: 1px solid #cbd5e1;
+    }
+
+    .card-assessment {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: #ffffff;
+    }
+
+    .card-assessment:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-box {
+      border-right: 4px solid var(--academic-gold);
+      background-color: #f1f5f9;
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .toast-container {
+      position: fixed;
+      bottom: 20px;
+      start: 20px;
+      z-index: 1090;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================== -->
+  <!-- القائمة العلوية (NAVBAR)                        -->
+  <!-- ============================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-academic sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-mortarboard-fill text-warning fs-3"></i>
+        <div>
+          <span class="fs-5 brand-font text-white d-block leading-none">أ.د. رجاء محمود أبو علام</span>
+          <small class="text-white-50" style="font-size: 0.75rem;">الموقع الأكاديمي والتوثيقي الشامل</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">السيرة الذاتية</a></li>
+          <li class="nav-item"><a class="nav-link" href="books.html">المؤلفات والكتب</a></li>
+          <li class="nav-item"><a class="nav-link active" href="assessments.html">المقاييس المقننة</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">البحوث والدراسات</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" href="kuwait-legacy.html">مسيرة الكويت 🇰🇼</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================== -->
+  <!-- الترويسة الرئيسية (HEADER)                      -->
+  <!-- ============================================== -->
+  <header class="hero-header text-center">
+    <div class="container">
+      <span class="badge text-bg-warning px-3 py-2 fw-bold mb-3">السيكومترية والتقنين الإكلينيكي</span>
+      <h1 class="display-6 fw-bold brand-font mb-3">المقاييس والاختبارات النفسية المقننة</h1>
+      <p class="lead text-white-50 mx-auto mb-0" style="max-width: 800px; font-size: 1.05rem; line-height: 1.8;">
+        دليل المقاييس النفسية واختبارات الذكاء وتشخيص صعوبات التعلم التي أشرف على إعدادها وتقنينها وتطوير معاييرها في البيئة العربية والخليجية.
+      </p>
+    </div>
+  </header>
+
+  <!-- ============================================== -->
+  <!-- المحتوى الأساسي (MAIN CONTENT)                 -->
+  <!-- ============================================== -->
+  <main class="container my-5">
+    
+    <!-- حقل البحث والتصفية -->
+    <div class="row g-3 align-items-center mb-4">
+      <div class="col-md-6">
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search text-muted"></i></span>
+          <input type="text" id="searchInput" class="form-control" placeholder="ابحث باسم المقياس أو المجال أو سنة التقنين...">
+        </div>
+      </div>
+      <div class="col-md-6 text-md-start">
+        <span class="text-muted small">عرض المقاييس المقننة المتاحة للتحميل والاستشهاد الأكاديمي</span>
+      </div>
+    </div>
+
+    <!-- صندوق التنويه بمجموعة المقاييس الثلاثية -->
+    <div class="feature-box mb-5">
+      <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-diagram-3-fill fs-2 text-warning"></i>
+        <div>
+          <h5 class="fw-bold mb-1">مجموعة المقاييس التشخيصية الثلاثية لفرز صعوبات التعلم (1995)</h5>
+          <p class="text-muted small mb-0">
+            أعدها مركز تقويم وتعليم الطفل بدعم من مؤسسة الكويت للتقدم العلمي، وتضم ثلاثة مقاييس تكاملية: المدى الرقمي، رسم الشكل البشري، وبندر كوبيتز التطوري.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- شبكة بطاقات المقاييس -->
+    <div class="row g-4" id="assessmentsGrid">
+
+      <!-- 1. اختبار المدى الرقمي البصري السمعي (1995) -->
+      <div class="col-md-6 col-lg-4 assessment-item" data-keywords="المدى الرقمي البصري السمعي كوبيتز vads ذاكرة انتباه تكامل حسي صعوبات تعلم 1995">
+        <div class="card h-100 card-assessment p-3 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="badge text-bg-primary">صعوبات التعلم والذاكرة</span>
+            <span class="badge text-bg-light border text-muted">الكويت (1995)</span>
+          </div>
+          <h5 class="fw-bold mb-1">اختبار المدى الرقمي البصري السمعي (VADS)</h5>
+          <small class="text-muted d-block mb-3">تقنين: د. رجاء محمود أبو علام &bull; مركز تقويم وتعليم الطفل</small>
+          <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+            مقياس مقنن لتشخيص التكامل الإدراكي الحسي والتتابع والاسترجاع الفوري عبر 4 مسارات (سمعي-شفوي، بصري-شفوي، سمعي-تحريري، بصري-تحريري) للأعمار من 5 إلى 12 سنة.
+          </p>
+          <div class="pt-3 border-top mt-auto">
+            <div class="d-grid gap-2 mb-2">
+              <a href="downloads/vads-test.pdf" target="_blank" download="دليل_اختبار_المدى_الرقمي_ابوعلام.pdf" class="btn btn-danger btn-sm fw-semibold">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> تحميل كراسة التعليمات (PDF)
+              </a>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-primary btn-sm" onclick="copyCitation('أبو علام، رجاء محمود. (1995). اختبار المدى الرقمي البصري السمعي: كتاب التعليمات وجداول المعايير. الكويت: مركز تقويم وتعليم الطفل.')">
+                <i class="bi bi-quote me-1"></i> توثيق APA
+              </button>
+              <small class="text-muted">142 صفحة</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. اختبار رسم الشكل البشري (1995) -->
+      <div class="col-md-6 col-lg-4 assessment-item" data-keywords="رسم الشكل البشري كوبيتز hfd نمائي ذكاء نضج عقلي رسوم اطفال 1995">
+        <div class="card h-100 card-assessment p-3 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="badge text-bg-success">النضج العقلي والنمائي</span>
+            <span class="badge text-bg-light border text-muted">الكويت (1995)</span>
+          </div>
+          <h5 class="fw-bold mb-1">اختبار رسم الشكل البشري (HFD)</h5>
+          <small class="text-muted d-block mb-3">إعداد وتقنين: د. رجاء محمود أبو علام &bull; مركز تقويم وتعليم الطفل</small>
+          <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+            تقنين نظام إليزابث كوبيتز النمائي (30 فقرة متوقعة وفائقة) لتقدير النضج العقلي والفرز الإكلينيكي للأطفال (5–12 سنة) مع نماذج تقييم رسوم أطفال الكويت.
+          </p>
+          <div class="pt-3 border-top mt-auto">
+            <div class="d-grid gap-2 mb-2">
+              <a href="downloads/human-figure-drawing.pdf" target="_blank" download="دليل_رسم_الشكل_البشري_ابوعلام.pdf" class="btn btn-danger btn-sm fw-semibold">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> تحميل كراسة التعليمات (PDF)
+              </a>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-primary btn-sm" onclick="copyCitation('أبو علام، رجاء محمود. (1995). اختبار رسم الشكل البشري: كتاب التعليمات والبيانات المعيارية. الكويت: مركز تقويم وتعليم الطفل.')">
+                <i class="bi bi-quote me-1"></i> توثيق APA
+              </button>
+              <small class="text-muted">106 صفحة</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. اختبار بندر كوبيتز التطوري (1995) -->
+      <div class="col-md-6 col-lg-4 assessment-item" data-keywords="بندر كوبيتز التطوري جشتالت بصري حركي تآزر ادراك اشكال 1995">
+        <div class="card h-100 card-assessment p-3 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="badge text-bg-warning">التكامل البصري الحركي</span>
+            <span class="badge text-bg-light border text-muted">الكويت (1995)</span>
+          </div>
+          <h5 class="fw-bold mb-1">اختبار بندر كوبيتز التطوري</h5>
+          <small class="text-muted d-block mb-3">تقنين: د. رجاء محمود أبو علام &bull; مركز تقويم وتعليم الطفل</small>
+          <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+            تقنين الأشكال التسعة لاختبار بندر جشتالت بنظام كوبيتز الموضوعي للكشف عن القصور الإدراكي الحركي والتآزر العصبي الدقيق للأطفال من عمر 5 حتى 12 سنة.
+          </p>
+          <div class="pt-3 border-top mt-auto">
+            <div class="d-grid gap-2 mb-2">
+              <a href="downloads/bender-gestalt-koppitz.pdf" target="_blank" download="دليل_بندر_كوبيتز_التطوري_ابوعلام.pdf" class="btn btn-danger btn-sm fw-semibold">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> تحميل كراسة التعليمات (PDF)
+              </a>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-primary btn-sm" onclick="copyCitation('أبو علام، رجاء محمود. (1995). اختبار بندر كوبيتز التطوري: كراسة التعليمات والمعايير الإحصائية. الكويت: مركز تقويم وتعليم الطفل.')">
+                <i class="bi bi-quote me-1"></i> توثيق APA
+              </button>
+              <small class="text-muted">72 صفحة</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. مقاييس مكارثي الكويت لقدرات الأطفال (1994) -->
+      <div class="col-md-6 col-lg-4 assessment-item" data-keywords="مكارثي قدرات اطفال msca ذكاء نمائي لفظي كمي حركي معرفية عامة 1994">
+        <div class="card h-100 card-assessment p-3 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="badge text-bg-info">مقاييس القدرات العقلية الشاملة</span>
+            <span class="badge text-bg-light border text-muted">الكويت (1994)</span>
+          </div>
+          <h5 class="fw-bold mb-1">مقاييس مكارثي الكويت لقدرات الأطفال</h5>
+          <small class="text-muted d-block mb-3">أ.د. رجاء محمود أبو علام &bull; كلية التربية جامعة الكويت / دار القلم</small>
+          <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+            منظومة مقاييس تشخيصية مقننة للأعمار المبكرة (2.5 إلى 8.5 سنة)؛ تتكون من 18 اختباراً فرعياً و6 مقاييس (اللفظي، العملي، الكمي، المعرفية العامة، الذاكرة، الحركي).
+          </p>
+          <div class="pt-3 border-top mt-auto">
+            <div class="d-grid gap-2 mb-2">
+              <a href="downloads/mccarthy-scales-kuwait.pdf" target="_blank" download="كتاب_تعليمات_مقاييس_مكارثي_ابوعلام.pdf" class="btn btn-danger btn-sm fw-semibold">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> تحميل كتاب التعليمات الشامل (PDF)
+              </a>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-primary btn-sm" onclick="copyCitation('أبو علام، رجاء محمود. (1994). مقاييس مكارثي الكويت لقدرات الأطفال: كتاب التعليمات. الكويت: دار القلم للنشر والتوزيع.')">
+                <i class="bi bi-quote me-1"></i> توثيق APA
+              </button>
+              <small class="text-muted">259 صفحة</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. اختبار الذكاء غير اللغوي (1985) -->
+      <div class="col-md-6 col-lg-4 assessment-item" data-keywords="الذكاء غير اللغوي غير اللفظي وزارة التربية ترمان لورج 1985 1969 ذكاء جمعي">
+        <div class="card h-100 card-assessment p-3 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="badge text-bg-dark">الذكاء الجمعي غير اللفظي</span>
+            <span class="badge text-bg-light border text-muted">الكويت (1985)</span>
+          </div>
+          <h5 class="fw-bold mb-1">اختبار الذكاء غير اللغوي (الطبعة الثانية)</h5>
+          <small class="text-muted d-block mb-3">د. رجاء محمود أبو علام و د. محمد أحمد غالي &bull; وزارة التربية</small>
+          <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+            إعادة تقنين وتطوير الاختبار لمدارس الكويت لعمر 6 إلى 14 سنة (15,480 تلميذاً)، لقياس القدرة على التفكير المجرد والعلاقات بين الرموز ونسب الذكاء الانحرافية.
+          </p>
+          <div class="pt-3 border-top mt-auto">
+            <div class="d-grid gap-2 mb-2">
+              <a href="downloads/nonverbal-iq-test.pdf" target="_blank" download="كراسة_تعليمات_الذكاء_غير_اللغوي_ابوعلام.pdf" class="btn btn-danger btn-sm fw-semibold">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> تحميل كراسة التعليمات (PDF)
+              </a>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-primary btn-sm" onclick="copyCitation('أبو علام، رجاء محمود، وغالي، محمد أحمد. (1985). اختبار الذكاء غير اللغوي: كراسة التعليمات (ط. 2). الكويت: وزارة التربية، إدارة الخدمة النفسية.')">
+                <i class="bi bi-quote me-1"></i> توثيق APA
+              </button>
+              <small class="text-muted">43 صفحة</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. مقياس وكسلر الكويت لذكاء الأطفال (WISC) -->
+      <div class="col-md-6 col-lg-4 assessment-item" data-keywords="وكسلر الكويت لذكاء الاطفال wisc ذكاء فردي لفظي عملي 1978">
+        <div class="card h-100 card-assessment p-3 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="badge text-bg-primary">مقاييس الذكاء الإكلينيكي</span>
+            <span class="badge text-bg-light border text-muted">الكويت (1978)</span>
+          </div>
+          <h5 class="fw-bold mb-1">مقياس وكسلر الكويت لذكاء الأطفال (WISC)</h5>
+          <small class="text-muted d-block mb-3">تقنين مشترك &bull; وزارة التربية وجامعة الكويت</small>
+          <p class="text-secondary small flex-grow-1" style="line-height: 1.7;">
+            التقنين الوطني الكويتي الشامل لمقياس وكسلر الفردي لذكاء الأطفال، وتطوير معايير الاختبارات الفرعية اللفظية والعملية ونسب الذكاء الانحرافية.
+          </p>
+          <div class="pt-3 border-top mt-auto d-flex justify-content-between align-items-center">
+            <button class="btn btn-outline-primary btn-sm" onclick="copyCitation('أبو علام، رجاء محمود، وآخرون. (1978). مقياس وكسلر لذكاء الأطفال: كراسة التعليمات وجداول المعايير الكويتية. الكويت: وزارة التربية.')">
+              <i class="bi bi-quote me-1"></i> توثيق APA
+            </button>
+            <span class="badge bg-light text-muted border">معايير رسمية معتمدة</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============================================== -->
+  <!-- إشعار نسخ التوثيق (TOAST FEEDBACK)             -->
+  <!-- ============================================== -->
+  <div class="toast-container">
+    <div id="citationToast" class="toast align-items-center text-bg-dark border-0 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="bi bi-check-circle-fill text-success me-2"></i> تم نسخ التوثيق المعتمد (APA) بنجاح إلى الحافظة!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- تذييل الصفحة (FOOTER)                           -->
+  <!-- ============================================== -->
+  <footer class="py-4 text-center border-top bg-white mt-5">
+    <div class="container text-muted small">
+      <p class="mb-1">الأرشيف الأكاديمي الرقمي للأستاذ الدكتور رجاء محمود أبو علام (1938 &ndash; 2023)</p>
+      <p class="mb-0 text-white-50" style="font-size: 0.75rem;">المواد والمقاييس منشورة لأغراض البحث العلمي والتوثيق الأكاديمي غير التجاري</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- برمجيات التفاعل والبحث ونسخ التوثيق -->
+  <script>
+    // البحث والتصفية اللحظية
+    document.getElementById('searchInput').addEventListener('keyup', function() {
+      const filter = this.value.toLowerCase().trim();
+      const items = document.querySelectorAll('.assessment-item');
+      items.forEach(item => {
+        const text = (item.getAttribute('data-keywords') + ' ' + item.textContent).toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+
+    // نسخ التوثيق الأكاديمي مع إشعار للمستخدم
+    function copyCitation(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        const toastEl = document.getElementById('citationToast');
+        const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+        toast.show();
+      });
+    }
+  </script>
+</body>
+</html>
